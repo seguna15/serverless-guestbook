@@ -17,7 +17,6 @@ const guestbook = {
     return $.ajax({
       type: 'PUT',
       url: `${apiUrl}/save-guestbook-entry-sequence.json`,
-      'Access-Control-Allow-Origin': '*',
       contentType: 'application/json; charset=utf-8',
       data: JSON.stringify({
         name,
